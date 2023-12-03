@@ -8,7 +8,7 @@ export async function loader({ params }) {
 
 export default function Contact() {
 	const { contact } = useLoaderData();
-	
+
 	return (
 		<div id="contact">
 			<div>
