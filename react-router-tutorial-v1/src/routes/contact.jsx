@@ -6,6 +6,7 @@ import  {
 import { getContact, updateContact } from '../contacts';
 
 export async function loader({ params }) {
+	console.log(params)
   const contact = await getContact(params.contactId);  
   if (!contact) {
   	throw new Response("", {
